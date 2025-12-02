@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => {
       },
       resolve: {
         alias: {
+          crypto: 'crypto-browserify',
           '@': path.resolve(__dirname, '.'),
         }
       }
