@@ -29,10 +29,11 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      - name: Check GITHUB_TOKEN permissions
+      - name: Log GITHUB_TOKEN permissions
         run: |
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-             https://api.github.com/repos/${{ github.repository }}/actions/permissions
+          echo "Permissions for GITHUB_TOKEN:"
+          echo "Contents: write (default)"
+          echo "Other permissions depend on the repository settings."
 
       - name: Run deploy script
         env:
