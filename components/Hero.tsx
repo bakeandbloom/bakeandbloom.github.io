@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
         <div className="order-1 md:order-2 relative">
            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 ease-out border-8 border-white">
              <img 
-               src="/images/bouquet-main.png"
+               src="/images/main.png"
                alt="Bouquet Cake"
                className="w-full h-auto object-cover transform scale-105 hover:scale-100 transition-transform duration-700"
              />
