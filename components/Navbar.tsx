@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             {/*<Flower className="text-brand-accent h-8 w-8" />*/}
-            <img src="../images/logo.png" alt="Bake & Bloom" className="h-24" />
+            <img src="/images/logo.png" alt="Bake & Bloom" className="h-24" />
             <span className="font-serif text-2xl font-bold text-brand-dark tracking-wide">
               Bake <span className="text-brand-accent">&</span> Bloom
             </span>

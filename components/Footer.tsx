@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               {/*<span className="font-serif text-2xl font-bold text-white tracking-wide">*/}
               {/*  Bake <span className="text-brand-accent">&</span> Bloom*/}
               {/*</span>*/}
-              <img src="../images/logo.png" alt="Bake & Bloom" className="h-20" />
+              <img src="/images/logo.png" alt="Bake & Bloom" className="h-20" />
               <span className="font-serif text-2xl font-bold text-white tracking-wide">
                 Bake <span className="text-brand-accent">&</span> Bloom
               </span>
