@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
+import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
@@ -25,6 +26,18 @@ export default defineConfig(({ mode }) => {
     },
     optimizeDeps: {
       include: ['crypto-browserify', 'stream-browserify', 'buffer'],
+      esbuildOptions: {
+        // Node.js global polyfills
+        define: {
+          global: 'globalThis',
+        },
+        plugins: [
+          NodeGlobalsPolyfillPlugin({
+            buffer: true,
+            process: true,
+          }),
+        ],
+      },
     },
   };
 });
