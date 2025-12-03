@@ -2,12 +2,12 @@ import React from 'react';
 import { MenuItem } from '../types';
 import { ShoppingBag, Flower } from 'lucide-react';
 
-import bouquet from '@/public/images/bouquet.png';
-import eightBirthday from '@/public/images/8th-birthday.png';
-import anniversary from '@/public/images/25th-anniversary.jpg';
-import princessCastle from '@/public/images/princess-castle.png';
-import harryPotter from '@/public/images/harry-potter.png';
-import cupcakes from '@/public/images/cupcakes.png';
+import bouquet from '/images/bouquet.png';
+import eightBirthday from '/images/8th-birthday.png';
+import anniversary from '/images/25th-anniversary.jpg';
+import princessCastle from '/images/princess-castle.png';
+import harryPotter from '/images/harry-potter.png';
+import cupcakes from '/images/cupcakes.png';
 
 
 const menuItems: MenuItem[] = [
