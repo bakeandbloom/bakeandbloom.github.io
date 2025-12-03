@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -28,12 +30,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-
-      - name: Log GITHUB_TOKEN permissions
-        run: |
-          echo "Permissions for GITHUB_TOKEN:"
-          echo "Contents: write (default)"
-          echo "Other permissions depend on the repository settings."
 
       - name: Run deploy script
         env:
